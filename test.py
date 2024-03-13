@@ -9,6 +9,7 @@ from streamlit_option_menu import option_menu
 load_dotenv() ## load all our environment variables
 
 def get_gemini_pro():
+  GOOGLE_API_KEY='AIzaSyAc7Ii4wHf_whau2q--rgjfdht8-I5xhSY'
   genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
   return genai.GenerativeModel('gemini-pro')
 
